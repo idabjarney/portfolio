@@ -1,0 +1,109 @@
+.wrapper {
+  display: flex;
+  align-items: flex-end;
+  // height: 100vh;
+  .page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 999;
+    min-height: 100vh;
+    width: 100%;
+    .text-container {
+      display: flex;
+      flex-direction: column;
+      width: 800px;
+      color: #AAA690;
+      .h1-container {
+        display: flex;
+        width: 420px;
+        margin-bottom: 1rem;
+        h1 {
+          font-size: 6.6rem;
+          line-height: 1.2;
+          span {
+            font-size: 7rem;
+            color: #e9dfac;
+          }
+        }
+      }
+      .p-container {
+        p {
+          font-size: 2.6rem;
+          line-height: 3.2rem;
+          span {
+            font-weight: 400;
+            color: #ddd5ac;
+
+          }
+        }
+      }
+    }
+  }
+  .waves {
+    display: flex;
+    background-color: #362017;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    svg {
+      height: 100vh;
+      width: 100vw;
+      .bg-blob {
+        animation: rotate 155s linear infinite;
+        transform-box: fill-box;
+        transform-origin: center;
+        // display: none;
+
+      }
+      .black-blob1 {
+        animation: rotate 75s linear infinite;
+        transform-box: fill-box;
+        transform-origin: center;
+        // display: none;
+
+      }
+      .black-blob2 {
+        animation: rotate 95s linear infinite;
+        transform-box: fill-box;
+        transform-origin: center;
+        // display: none;
+
+      }
+      .brown-back {
+        animation: rotate 65s linear infinite;
+        animation-direction: reverse;
+        transform-box: fill-box;
+        transform-origin: center;
+        // display: none;
+
+      }
+      .brown-mid {
+        animation: rotate 60s linear infinite;
+        // animation-direction: reverse;
+        transform-box: fill-box;
+        transform-origin: center;
+        // display: none;
+      }
+      .circles {
+        circle {
+          transform-box: fill-box;
+          transform-origin: center;
+          // display: none;
+        }
+      }
+    }
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
