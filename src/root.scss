@@ -34,11 +34,16 @@ ul {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Libre Baskerville', serif;
   font-weight: 400;
+  color: #AAA690;
 }
 
 p {
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
+}
+
+a, p, li {
+  color: #AAA690
 }
 
 ::-moz-selection { /* Code for Firefox */
