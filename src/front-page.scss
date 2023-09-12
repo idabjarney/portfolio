@@ -1,7 +1,8 @@
+@import 'variables.scss';
+
 .wrapper {
   display: flex;
   align-items: flex-end;
-  // height: 100vh;
   .page-container {
     display: flex;
     justify-content: center;
@@ -10,11 +11,93 @@
     z-index: 999;
     min-height: 100vh;
     width: 100%;
+    .menu {
+      position: absolute;
+      display: flex;
+      top: 0px;
+      left: 0;
+      // margin: 15px;
+      z-index: 100;
+      .menu-btn {
+        // transition: 200ms;
+        cursor: pointer;
+        // scale: 1;
+        // i {
+        //   font-size: 30px;
+        //   color: $grey;
+        // }
+        // &:hover {
+        //   scale: 1.1;
+        // }
+        // &:active {
+        //   scale: 0.9;
+        // }
+        position: relative;
+        display:  inline-block;
+        width: 60px;
+        height: 60px;
+        margin: 25px;
+        z-index: 500;
+        span {
+          transition: 500ms ease;
+          margin: 0 auto;
+          position: relative;
+          top: 12px;
+          &::before, &::after {
+            position: absolute;
+            content: '';
+          }
+        }
+        span, span::before, span::after {
+          width: 30px;
+          height: 2px;
+          background-color: $grey;
+          display: block;
+        }
+        span::before {
+          margin-top: -12px;
+          &.show {
+            margin-left: 10px;
+          }
+        }
+        span::after {
+          z-index: 4;
+          margin-top: 12px;
+          &.show {
+            margin-left: 10px;
+          }
+        }
+        &.show {
+          span {
+            margin: 0 auto;
+            position: relative;
+            top: 12px;
+            &::before, &::after {
+              position: absolute;
+              content: '';
+            }
+          }
+          span, span::before, span::after {
+            width: 30px;
+            height: 2px;
+            background-color: $grey;
+            display: block;
+          }
+          span::before {
+            margin-top: -12px;
+            margin-left: 10px;
+          }
+          span::after {
+            margin-top: 12px;
+            margin-left: 10px;
+          }
+        }
+      }
+    }
     .text-container {
       display: flex;
       flex-direction: column;
       width: 800px;
-      color: #AAA690;
       .h1-container {
         display: flex;
         width: 420px;
@@ -37,6 +120,7 @@
             color: #ddd5ac;
 
           }
+
         }
       }
     }
