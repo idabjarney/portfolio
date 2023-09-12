@@ -1,0 +1,158 @@
+.about-wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .inner {
+    width: 70%;
+    margin-top: 5%;
+    .text-container-top {
+      display: flex;
+      align-items: end;
+      width: 100%;
+      // justify-content: space-between;
+      .about-h1-container {
+        display: flex;
+        margin-left: 5rem;
+        width: 65%;
+        h1 {
+          font-size: 6.6rem;
+          line-height: 1.2;
+          transform: translateY(2rem);
+          position: relative;
+          z-index: 50;
+          span {
+            font-size: 7rem;
+            color: #e9dfac;
+          }
+        }
+      }
+      .dev-tools {
+        display: flex;
+        width: 35%;
+        h2 {
+          transform: translateY(1.4rem);
+          position: relative;
+          z-index: 50;
+          font-weight: 300;
+          // font-family: 'Libre Baskerville', serif;
+        }
+      }
+    }
+    .about-container {
+      height: 600px;
+      width: 100%;
+      display: flex;
+      padding: 3rem;
+      &.glass {
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.062), rgba(255, 255, 255, 0));
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        border-radius: 3px;
+        // border:1px solid rgba(255, 255, 255, 0.18);
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+      }
+      .text-container {
+        width: 65%;
+        border-right: solid 1px $grey-opacity-xtra;
+        padding: 3rem 1rem 0 0 ;
+      }
+      .stack-container {
+        width: 35%;
+
+        .tech-stack {
+          user-select: none;
+          padding-left: 3rem;
+          // margin-bottom: 2rem;
+          padding-bottom: 4rem;
+          border-bottom: 1px solid $grey-opacity-xtra;
+          ul {
+            margin-left: 2rem;
+            li {
+              display: flex;
+              align-items: center;
+              margin: 1rem 0;
+              i {
+                transition: 200ms ease;
+                font-size: 2.5rem;
+                margin-right: 2rem;
+                color: $grey-opacity;
+                scale: 1;
+              }
+              &:hover {
+                i {
+                  scale: 1.13;
+                  &.devicon-html5-plain {
+                    color: #e6602b8a!important;
+                  }
+                  &.devicon-css3-plain {
+                    color: #008cff8a!important;
+                  }
+                  &.devicon-sass-original {
+                    color: #c731848a!important;
+                  }
+                  &.devicon-javascript-plain {
+                    color: #ebc20e8a!important;
+                  }
+                  &.devicon-typescript-plain {
+                    color: #008cff8a!important;
+                  }
+                  &.devicon-git-plain {
+                    color: #e63a058a!important;
+                  }
+                  &.devicon-photoshop-line {
+                    color: #0a86ec8a!important;
+                  }
+                  &.devicon-figma-plain {
+                    color: #21a0658a!important;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .other-skills {
+          padding-left: 3rem;
+          user-select: none;
+          h2 {
+            font-size: 22px;
+            transform: translateY(-2.2rem);
+          }
+          ul {
+            margin-left: 2rem;
+            li {
+              display: flex;
+              align-items: center;
+              margin: 1rem 0;
+              i {
+                transition: 200ms ease;
+                font-size: 2.5rem;
+                margin-right: 2rem;
+                color: $grey-opacity;
+                scale: 1;
+              }
+              &:hover {
+                i {
+                  scale: 1.13;
+                  &.devicon-git-plain {
+                    color: #e63a058a!important;
+                  }
+                  &.devicon-vscode-plain {
+                    color: #008cff8a!important;
+                  }
+                  &.devicon-photoshop-line {
+                    color: #008cff8a!important;
+                  }
+                  &.devicon-figma-plain {
+                    color: #21a0658a!important;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

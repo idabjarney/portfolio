@@ -1,12 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-@import 'front-page.scss', 'nav.scss';
-
-$grey: #AAA690;
-$yellow: #e9dfac;
-$orange: #ff8d6b;
-$white: #f0efed;
-$black: #080b1b;
+@import 'front-page.scss', 'nav.scss', '../about/about.scss';
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -44,10 +38,17 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   color: #AAA690;
 }
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  font-weight: 300;
+  letter-spacing: -0.2px;
+}
 
 p {
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
+  font-size: 1.5rem;
 }
 
 a, p, li {
