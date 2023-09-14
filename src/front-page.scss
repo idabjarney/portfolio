@@ -97,9 +97,10 @@
       }
     }
     .text-container {
+      user-select: none;
       display: flex;
       flex-direction: column;
-      width: 800px;
+      width: 780px;
       .h1-container {
         display: flex;
         width: 420px;

@@ -38,6 +38,19 @@ a {
   color: inherit;
   font-family: 'Montserrat', sans-serif;
 }
+
+p {
+  a {
+    display: inline-block;
+    transition: 300ms;
+    color: $yellow;
+    font-weight: 400;
+    &:hover {
+      color: #f3eabf;
+    }
+  }
+}
+
 ul {
   list-style-type: none;
 }
