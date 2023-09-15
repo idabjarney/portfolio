@@ -85,34 +85,80 @@
         }
       }
     }
-    .text-container {
-      user-select: none;
+    .front-page-wrapper {
       display: flex;
-      flex-direction: column;
-      width: 780px;
-      .h1-container {
+      height: 100%;
+      align-items: center;
+      padding: 7rem;
+      .text-container {
+        user-select: none;
         display: flex;
-        width: 420px;
-        margin-bottom: 1rem;
-        h1 {
-          font-size: 6.6rem;
-          line-height: 1.2;
-          span {
-            font-size: 7rem;
-            color: #e9dfac;
+        flex-direction: column;
+        max-width: 780px;
+        .h1-container {
+          display: flex;
+          width: 420px;
+          margin-bottom: 1rem;
+          h1 {
+            font-size: 6.6rem;
+            line-height: 1.2;
+            span {
+              font-size: 7rem;
+              color: #e9dfac;
+            }
+          }
+        }
+        .p-container {
+          p {
+            font-size: 2.6rem;
+            line-height: 3.2rem;
+            span {
+              font-weight: 400;
+              color: #ddd5ac;
+  
+            }
+  
           }
         }
       }
-      .p-container {
-        p {
-          font-size: 2.6rem;
-          line-height: 3.2rem;
-          span {
-            font-weight: 400;
-            color: #ddd5ac;
-
+      @media (max-width: 850px) {
+        padding: 2rem;
+        .text-container {
+          .h1-container {
+            width: 280px;
+            h1 {
+              font-size: 4.4rem;
+              span {
+                font-size: 5rem;
+              }
+            }
           }
-
+          .p-container {
+            width: 500px;
+            p {
+              font-size: 1.9rem;
+            }
+          }
+        }
+      }
+      @media (max-width: 545px) {
+        padding: .5rem;
+        .text-container {
+          .h1-container {
+            width: 195px;
+            h1 {
+              font-size: 3rem;
+              span {
+                font-size: 3.5rem;
+              }
+            }
+          }
+          .p-container {
+            width: 300px;
+            p {
+              font-size: 1.4rem;
+            }
+          }
         }
       }
     }
