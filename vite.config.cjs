@@ -7,6 +7,7 @@ module.exports = {
         main: resolve(__dirname, 'index.html'),
         about: resolve(__dirname, 'about/index.html'),
         about: resolve(__dirname, 'contact/index.html'),
+        about: resolve(__dirname, 'portfolio/index.html'),
       },
     },
   },

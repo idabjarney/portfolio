@@ -15,5 +15,5 @@
     "noImplicitReturns": true,
     "skipLibCheck": true
   },
-  "include": ["src", "about", "contact"]
+  "include": ["src", "about", "contact", "portfolio"]
 }
