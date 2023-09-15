@@ -2,15 +2,17 @@
 
 .wrapper {
   display: flex;
+  flex-direction: column;
   align-items: flex-end;
+  height: 100vh;
   .page-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    // justify-content: center;
     align-items: center;
     position: relative;
     z-index: 999;
-    min-height: 100vh;
+    flex: 1;
     width: 100%;
     .menu {
       position: absolute;
@@ -20,19 +22,7 @@
       // margin: 15px;
       z-index: 100;
       .menu-btn {
-        // transition: 200ms;
         cursor: pointer;
-        // scale: 1;
-        // i {
-        //   font-size: 30px;
-        //   color: $grey;
-        // }
-        // &:hover {
-        //   scale: 1.1;
-        // }
-        // &:active {
-        //   scale: 0.9;
-        // }
         position: relative;
         display:  inline-block;
         width: 60px;
