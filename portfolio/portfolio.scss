@@ -171,11 +171,9 @@
         display: flex;
         justify-content: center;
       }
-      // @media (max-width: 850px) {
-      //   padding: 0rem 3rem 1rem 3rem;
-      // }
       @media (max-width: 850px) {
         padding: 0rem 15% 1rem 15%;
+        height: 100%;
       }
     }
     @media (max-width: 1550px) {

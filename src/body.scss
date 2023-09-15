@@ -30,6 +30,12 @@ body {
     display: flex;
     justify-content: center;
     position: absolute;
+    bottom: 0;
+    padding: .5rem;
+    @media (max-width: 1285px) {
+      bottom: initial;
+      position: relative;
+    }
   }
 }
 
