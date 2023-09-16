@@ -158,16 +158,14 @@
       </svg>
     </div>
     <div class="page-container">
-      <div class="menu">
-        <button class="menu-btn">
-          <!-- <i class="fi-xnluxl-three-bars"></i>
-          <i class="fi-xtsuxl-center-align-alt-solid"></i> -->
-          <span></span>
-        </button>
-      </div>
-      <nav>
-        <ul class="nav-ul">
-          <li class="list-item home" id="home-li">
+      <nav class="desktop-nav">
+        <div class="menu">
+          <button class="menu-btn-desktop">
+            <span></span>
+          </button>
+        </div>
+        <ul class="nav-ul ">
+          <li class="list-item home glass" id="home-li">
             <a href="/">
               <span>Home</span>
               <span class="material-symbols-outlined">
@@ -175,15 +173,15 @@
                 </span>
             </a>
           </li>
-          <li class="list-item portfolio">
-            <a href="/">
+          <li class="list-item portfolio glass">
+            <a href="/portfolio/">
               <span>My work</span>
               <span class="material-symbols-outlined">
                 folder_copy
                 </span>
             </a>
           </li>
-          <li class="list-item about">
+          <li class="list-item about glass">
             <a href="/about/">
               <span>About me</span>
               <span class="material-symbols-outlined">
@@ -191,12 +189,41 @@
                 </span>
             </a>
           </li>
-          <li class="list-item contact">
+          <li class="list-item contact glass">
             <a href="/contact/">
               <span>Contact</span>
               <span class="material-symbols-outlined">
                 mail
                 </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="mobile-nav">
+        <div class="menu-mobile">
+          <button class="menu-btn-mobile">
+            <span></span>
+          </button>
+        </div>
+        <ul class="nav-ul-mobile glass">
+          <li class="list-item home" id="home-li">
+            <a href="/">
+              <span class="page-link">Home</span>
+            </a>
+          </li>
+          <li class="list-item portfolio">
+            <a href="/portfolio/">
+              <span class="page-link">My work</span>
+            </a>
+          </li>
+          <li class="list-item about">
+            <a href="/about/">
+              <span class="page-link">About me</span>
+            </a>
+          </li>
+          <li class="list-item contact">
+            <a href="/contact/">
+              <span class="page-link">Contact</span>
             </a>
           </li>
         </ul>

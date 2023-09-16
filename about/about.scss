@@ -27,8 +27,10 @@
             color: #e9dfac;
           }
         }
+        @media (max-width: 950px) {
+          margin-left: 10%; 
+        }
         @media (max-width: 850px) {
-          margin-left: 10%;
           h1 {
             transform: translateY(2rem);
             font-size: 5rem;
@@ -38,11 +40,12 @@
           }
         }
         @media (max-width: 465px) {
+          margin-left: 20%;
           h1 {
             transform: translateY(1.4rem);
-            font-size: 3rem;
+            font-size: 3.5rem;
             span {
-              font-size: 3.4rem;
+              font-size: 4rem;
             }
           }
         }

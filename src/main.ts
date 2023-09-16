@@ -2,10 +2,18 @@ import './body.scss';
 import './front-page.scss';
 import './nav.scss';
 
-const menuBtn: HTMLButtonElement | null = document.querySelector('.menu-btn');
-const navUl: HTMLUListElement | null = document.querySelector('.nav-ul');
+const menuBtnDesktop: HTMLButtonElement | null = document.querySelector('.menu-btn-desktop');
+const menuBtnMobile: HTMLButtonElement | null = document.querySelector('.menu-btn-mobile');
+const navUlDesktop: HTMLUListElement | null = document.querySelector('.nav-ul');
+const navUlMobile: HTMLUListElement | null = document.querySelector('.nav-ul-mobile');
 
-menuBtn?.addEventListener('click', function(): void {
-  navUl?.classList.toggle('show');
-  menuBtn.classList.toggle('show');
+menuBtnDesktop?.addEventListener('click', function(): void {
+  navUlDesktop?.classList.toggle('show');
+  menuBtnDesktop.classList.toggle('show');
+})
+
+menuBtnMobile?.addEventListener('click', function(): void {
+  navUlMobile?.classList.toggle('show');
+  menuBtnMobile.classList.toggle('show');
+  console.log('hello')
 })

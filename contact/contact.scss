@@ -27,8 +27,11 @@
             color: #e9dfac;
           }
         }
-        @media (max-width: 850px) {
+        @media (max-width: 950px) {
           margin-left: 10%;
+          
+        }
+        @media (max-width: 850px) {
           h1 {
             transform: translateY(2rem);
             font-size: 5rem;
@@ -38,19 +41,31 @@
           }
         }
         @media (max-width: 515px) {
+          margin-left: 20%;
+          h1 {
+            transform: translateY(2rem);
+            font-size: 4rem;
+            span {
+              font-size: 4.5rem;
+            }
+          }
+        }
+        @media (max-width: 450px) {
           width: 100%;
+          margin-left: 20%;
+
           h1 {
             transform: translateY(1.4rem);
-            font-size: 3rem;
+            font-size: 3.5rem;
             span {
-              font-size: 3.4rem;
+              font-size: 4rem;
             }
           }
         }
       }
     }
     .contact-container {
-      height: 600px;
+      // height: 600px;
       width: 100%;
       display: flex;
       padding: 3rem;
@@ -159,6 +174,10 @@
           }
           .linkedin-link {
             user-select: none;
+            margin-bottom:8rem;
+            @media (max-width: 850px) {
+              margin-bottom: 2rem;
+            }
           }
         }
         @media (max-width: 1250px) {
@@ -221,6 +240,8 @@
     @media (max-width: 950px) {
       width: 100%;
       padding: 3rem 1rem;
+      height: 300px;
+      margin-top: 100px;
     }
     
   }
