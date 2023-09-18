@@ -30,9 +30,14 @@ body {
       width: 100%;
       display: flex;
       justify-content: center;
-      padding: .5rem 0 1rem 0;
-      bottom: 0;
-      position: absolute;
+      align-items: center;
+      // bottom: 0;
+      position: relative;
+      height: 38px;
+      margin-top: -38px;
+      p {
+        font-size: 14px;
+      }
     }
   }
 }
